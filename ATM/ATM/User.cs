@@ -11,17 +11,68 @@ namespace ATM
 {
     public partial class User : Form
     {
-        public User()
+
+        public User()//form nguoi dung
         {
             InitializeComponent();
-            labelTaiKhoan.Text = Form1.TentaiKhoan.Ten;
         }
 
-        private void btn_ThongTinTaiKhoan_Click(object sender, EventArgs e)
+        private void menu_Logout_Click(object sender, EventArgs e)
         {
-            ThongTinTaiKhoan th = new ThongTinTaiKhoan();
-            th.Show();
-            this.Hide();
+            //log out
+            this.Close();
+            Form1 f = new Form1();
+            f.Show();
+        }
+
+        private void menu_ThongTinTK_Click(object sender, EventArgs e)
+        {
+            // thong tin tai khoan
+            ThongTinTaiKhoan tk = new ThongTinTaiKhoan();
+            tk.MdiParent = this;
+            tk.Show();
+        }
+
+        private void menu_RutTien_Click(object sender, EventArgs e)
+        {
+            //rut tien
+            RutTien rt = new RutTien();
+            rt.MdiParent = this;
+            rt.Show();
+        }
+
+        private void menu_ChuyenTien_Click(object sender, EventArgs e)
+        {
+            //chuyen tien
+            ChuyenTien ct = new ChuyenTien();
+            ct.MdiParent = this;
+            ct.Show();
+        }
+
+        private void menu_giaodich_Click(object sender, EventArgs e)
+        {
+            //lich su giao dich
+            LichSuGiaoDich ls = new LichSuGiaoDich();
+            ls.MdiParent = this;
+            ls.Show();
+        }
+
+       
+
+        private void menu_Doi_MK_Click(object sender, EventArgs e)
+        {
+            // doi mat khau
+            Doi_Mat_Khau dmk = new Doi_Mat_Khau();
+            dmk.MdiParent = this;
+            dmk.Show();
+        }
+
+        private void menu_NapTien_Click(object sender, EventArgs e)
+        {
+            //nap tien tai khoan
+            Nap_Tien_Tai_Khoan nap = new Nap_Tien_Tai_Khoan();
+            nap.MdiParent = this;
+            nap.Show();
         }
     }
 }

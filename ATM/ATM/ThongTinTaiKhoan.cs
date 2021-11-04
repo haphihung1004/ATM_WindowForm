@@ -11,39 +11,47 @@ namespace ATM
 {
     public partial class ThongTinTaiKhoan : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=PHONG-PC\SQLEXPRESS;Initial Catalog=ATM;Integrated Security=True");
+        //ket nối sql
+        SqlConnection connection = new SqlConnection(Form1.DuongDan_KetNoiSQL.link);
         public ThongTinTaiKhoan()
         {
             InitializeComponent();
-            connection.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM UserN WHERE username ='" + Form1.TentaiKhoan.Ten + "'", connection);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            if (dt != null)
+            try
             {
-                foreach (DataRow dr in dt.Rows)
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM UserN WHERE username ='" + Form1.TentaiKhoan.Ten + "'", connection);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt != null)
                 {
-                    lbl_CMND.Text = "So CMND: " + dr["CMND"].ToString();
-                    lbl_HoTen.Text = "Ho va Ten :" + dr["HoTen"].ToString() ;
-                    lbl_GioiTinh.Text = "GioiTinh" + dr["GioiTinh"].ToString();
-                    lbl_NgaySinh.Text = "NgaySinh" + dr["NgaySinh"].ToString();
-                    lbl_NoiSinh.Text = "Noi Sinh:" + dr["NoiSinh"].ToString();
-                    lbl_DiaChi.Text = "Dia Chi :" + dr["DiaChi"].ToString();
-                    lbl_TenTaiKhoan.Text = "So Tai Khoan:" + dr["username"].ToString();
-                    lbl_SoTienTaiKhoan.Text = "So Tien TK:" + dr["SoTienTaiKhoan"].ToString();
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        //lay du lieu len label 
+                        lbl_CMND.Text = "Số CMND : " + dr["CMND"].ToString();
+                        lbl_HoTen.Text = "Họ va Tên : " + dr["HoTen"].ToString();
+                        lbl_GioiTinh.Text = "Giới Tính : " + dr["GioiTinh"].ToString();
+                        lbl_NgaySinh.Text = "Ngày Sinh : " + dr["NgaySinh"].ToString();
+                        lbl_NoiSinh.Text = "Nơi Sinh : " + dr["NoiSinh"].ToString();
+                        lbl_DiaChi.Text = "Địa Chỉ : " + dr["DiaChi"].ToString();
+                        lbl_TenTaiKhoan.Text = "Số Tài Khoản : " + dr["username"].ToString();
+                        lbl_SoTienTaiKhoan.Text = "Số Tiền TK : " + dr["SoTienTaiKhoan"].ToString() + " VND";
+                    }
                 }
             }
+            catch (SqlException)
+            {
+                MessageBox.Show("Lỗi xảy ra khi truy vấn dữ liệu hoặc kết nối với server thất bại !", "Thong bao");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Loi " + ex.Message, "Thong bao");
+            }
         }
-        public void closeForm()
-        {
-            this.Dispose();
-        }
+
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            closeForm();
-            User f = new User();
-            f.Show();
+            this.Close();//dong form
         }
     }
 }

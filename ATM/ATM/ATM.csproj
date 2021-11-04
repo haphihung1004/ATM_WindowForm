@@ -49,6 +49,30 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChuyenTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChuyenTien.Designer.cs">
+      <DependentUpon>ChuyenTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doi_Mat_Khau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doi_Mat_Khau.Designer.cs">
+      <DependentUpon>Doi_Mat_Khau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichSuGiaoDich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichSuGiaoDich.Designer.cs">
+      <DependentUpon>LichSuGiaoDich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nap_Tien_Tai_Khoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nap_Tien_Tai_Khoan.Designer.cs">
+      <DependentUpon>Nap_Tien_Tai_Khoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="QLThongTinTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +111,12 @@
     <Compile Include="QLRutTien.Designer.cs">
       <DependentUpon>QLRutTien.cs</DependentUpon>
     </Compile>
+    <Compile Include="RutTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RutTien.Designer.cs">
+      <DependentUpon>RutTien.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongTinTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +131,18 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChuyenTien.resx">
+      <DependentUpon>ChuyenTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doi_Mat_Khau.resx">
+      <DependentUpon>Doi_Mat_Khau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichSuGiaoDich.resx">
+      <DependentUpon>LichSuGiaoDich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nap_Tien_Tai_Khoan.resx">
+      <DependentUpon>Nap_Tien_Tai_Khoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLChuyenTien.resx">
       <DependentUpon>QLChuyenTien.cs</DependentUpon>
@@ -128,6 +170,9 @@
     </Compile>
     <EmbeddedResource Include="QLDangNhap.resx">
       <DependentUpon>QLDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RutTien.resx">
+      <DependentUpon>RutTien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinTaiKhoan.resx">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>

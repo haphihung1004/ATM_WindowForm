@@ -41,9 +41,11 @@
             // 
             // btn_logon
             // 
-            this.btn_logon.Location = new System.Drawing.Point(135, 232);
+            this.btn_logon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logon.ForeColor = System.Drawing.Color.Lime;
+            this.btn_logon.Location = new System.Drawing.Point(284, 232);
             this.btn_logon.Name = "btn_logon";
-            this.btn_logon.Size = new System.Drawing.Size(75, 23);
+            this.btn_logon.Size = new System.Drawing.Size(84, 55);
             this.btn_logon.TabIndex = 0;
             this.btn_logon.Text = "Logon";
             this.btn_logon.UseVisualStyleBackColor = true;
@@ -52,23 +54,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(160, 25);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(128, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 25);
+            this.label1.Size = new System.Drawing.Size(190, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "Đăng Nhập";
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(163, 75);
+            this.txtUserName.Location = new System.Drawing.Point(186, 83);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(132, 20);
             this.txtUserName.TabIndex = 2;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(163, 130);
+            this.txtPassword.Location = new System.Drawing.Point(186, 135);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(132, 20);
             this.txtPassword.TabIndex = 3;
@@ -77,28 +80,30 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(48, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 20);
+            this.label2.Size = new System.Drawing.Size(117, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Username :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(51, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Password";
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Location = new System.Drawing.Point(262, 232);
+            this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.Blue;
+            this.btn_Exit.Location = new System.Drawing.Point(62, 232);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Exit.Size = new System.Drawing.Size(89, 55);
             this.btn_Exit.TabIndex = 6;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
@@ -107,9 +112,10 @@
             // rdo_admin
             // 
             this.rdo_admin.AutoSize = true;
+            this.rdo_admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdo_admin.Location = new System.Drawing.Point(112, 188);
             this.rdo_admin.Name = "rdo_admin";
-            this.rdo_admin.Size = new System.Drawing.Size(54, 17);
+            this.rdo_admin.Size = new System.Drawing.Size(88, 28);
             this.rdo_admin.TabIndex = 7;
             this.rdo_admin.TabStop = true;
             this.rdo_admin.Text = "Admin";
@@ -119,9 +125,10 @@
             // rdo_user
             // 
             this.rdo_user.AutoSize = true;
+            this.rdo_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdo_user.Location = new System.Drawing.Point(233, 188);
             this.rdo_user.Name = "rdo_user";
-            this.rdo_user.Size = new System.Drawing.Size(47, 17);
+            this.rdo_user.Size = new System.Drawing.Size(71, 28);
             this.rdo_user.TabIndex = 8;
             this.rdo_user.TabStop = true;
             this.rdo_user.Text = "User";

@@ -113,10 +113,11 @@
             // 
             // btn_Back
             // 
-            this.btn_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Back.Location = new System.Drawing.Point(267, 327);
+            this.btn_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Back.ForeColor = System.Drawing.Color.Blue;
+            this.btn_Back.Location = new System.Drawing.Point(320, 360);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(95, 39);
+            this.btn_Back.Size = new System.Drawing.Size(88, 54);
             this.btn_Back.TabIndex = 8;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = true;
@@ -126,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 378);
+            this.ClientSize = new System.Drawing.Size(420, 426);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.lbl_SoTienTaiKhoan);
             this.Controls.Add(this.lbl_TenTaiKhoan);

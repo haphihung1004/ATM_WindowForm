@@ -26,3 +26,15 @@ E:\ATM\ATM\obj\Debug\ATM.QLThongTinTaiKhoan.resources
 E:\ATM\ATM\obj\Debug\ATM.QLChuyenTien.resources
 E:\ATM\ATM\obj\Debug\ATM.QLRutTien.resources
 E:\ATM\ATM\obj\Debug\ATM.QLNhanTien.resources
+E:\ATM\ATM\obj\Debug\ATM.RutTien.resources
+E:\ATM\ATM\obj\Debug\ATM.ChuyenTien.resources
+E:\ATM\ATM\obj\Debug\ATM.LichSuGiaoDich.resources
+D:\ATM\ATM\obj\Debug\ATM.ChuyenTien.resources
+D:\ATM\ATM\obj\Debug\ATM.LichSuGiaoDich.resources
+D:\ATM\ATM\obj\Debug\ATM.QLChuyenTien.resources
+D:\ATM\ATM\obj\Debug\ATM.QLNhanTien.resources
+D:\ATM\ATM\obj\Debug\ATM.QLRutTien.resources
+D:\ATM\ATM\obj\Debug\ATM.QLThongTinTaiKhoan.resources
+D:\ATM\ATM\obj\Debug\ATM.RutTien.resources
+D:\ATM\ATM\obj\Debug\ATM.Doi_Mat_Khau.resources
+D:\ATM\ATM\obj\Debug\ATM.Nap_Tien_Tai_Khoan.resources
